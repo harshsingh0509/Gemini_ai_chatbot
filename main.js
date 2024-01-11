@@ -1,6 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import md from "markdown-it";
 
+console.log(import.meta.env.VITE_API_KEY)
 // Initialize the model
 const genAI = new GoogleGenerativeAI(`${import.meta.env.VITE_API_KEY}`);
 
